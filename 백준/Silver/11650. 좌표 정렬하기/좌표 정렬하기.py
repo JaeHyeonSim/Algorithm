@@ -4,9 +4,9 @@ locs = []
 
 n = int(input())
 for i in range(n):
-    locs.append(list(map(int, input().split())))
+    locs.append(list(map(int, sys.stdin.readline().split())))
 
-locs = sorted(locs, key=lambda x: (x[0], x[1]))
+locs = sorted(locs)
 
 for loc in locs:
     print(*loc)
