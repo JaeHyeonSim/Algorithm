@@ -1,6 +1,6 @@
 import sys
 
-prime = [1 for i in range(1000000)]
+prime = [1] * 1000000
 for i in range(2, 1000000):
     if i * i >= 1000000:
         break
